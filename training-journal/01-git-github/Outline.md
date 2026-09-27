@@ -82,3 +82,26 @@ git clone "URL of the repo"
  
  "git diff "starting 8 digits from starting from each git log commits""
 
+# git annotate "file name"
+- timing and changes whatever happens
+- detail changes about any particular file
+- 'Gitlens' this is an EXTENSTION who tells the users exact changes about each lines in the file.
+# git show
+
+
+# making changes into any specific repo and commiting
+
+- if we doesnt wanted to ad everytime whatever changes we make and just directly wanted to do commit so we can use this command
+
+- git commmit -a "message"
+
+# undoing changes and reverting commits
+
+- for discarding the changes before the commiting part  we jsut use this command "git checkout --(file name)"
+
+- if we have already staged our changes into our working directory
+just use this command - "git reset HEAD (file name)"
+and then do agian the - "git checkout ..."
+
+
+ 
