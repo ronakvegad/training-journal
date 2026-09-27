@@ -6,7 +6,7 @@ random notes as i learn stuff. mostly for me, not polished.
  
 ## Git & GitHub (done - Sep 2026)
 ## DAY - 01 --- 26-09-2026
-### version control basics
+### Section - 1 & 2: Version Control Basics
 - git = tracks changes to files over time, can go back to any point
 - basically saves snapshots not just diffs (kinda, its more complex but thats the mental model)
 ### install
@@ -62,4 +62,23 @@ git push -u origin main
 ## next up
 - branching + PR workflow
 - resolving actual merge conflicts (only done fake ones so far)
+
+
+## DAY - 02 --- 27-09-2026
+
+## Section - 3 : Fork And Clone
+
+Forking Is basically just making a copy of a repository under your own github account , so like after the fork you can do your own new changes on that repo and the owner can also make their commits in the same repo.
+
+# How to clone anything from github
+```
+git clone "URL of the repo"
+```
+# Git Logs
+- `git log` = shows commit history (newest first) - hash, author, date, message
+- `git log --author="name"` = filter by who committed
+
+- in the same branch if i want to comapre the commits that i have already given and i want to compare the any two commits so we can do like that
+ 
+ "git diff "starting 8 digits from starting from each git log commits""
 
