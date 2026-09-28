@@ -151,6 +151,13 @@ git log --oneline --graph --all
 ```bash
 git checkout main
 git merge feature-x
+
+## for deleting any branch 
+
+git branch -d "branch name"
+
+
+
 ```
 - If there is a conflict, fix the files, then `git add .` and `git commit`
 
