@@ -93,7 +93,7 @@ git clone "URL of the repo"
 
 - if we doesnt wanted to ad everytime whatever changes we make and just directly wanted to do commit so we can use this command
 
-- git commmit -am "message"
+- git commmit -a "message"
 
 # undoing changes and reverting commits
 
@@ -104,61 +104,4 @@ just use this command - "git reset HEAD (file name)"
 and then do agian the - "git checkout ..."
 
 
- # working with Branches
-
-### 1. Good Version Control Practices
-- Commit small and often, with one logical change per commit
-- Write clear messages, e.g. `Add login validation`, not `changes`
-- Never work directly on `main`; use branches
-
-### 2. What is a Branch?
-- A separate line of development, lfike a copy where you can experiment safely
-- `main` stays stable while features are built on other branches
-
-### 3. Creating a Branch (Git)
-```bash
-git branch                  # list branches
-git branch feature-x        # create
-git checkout feature-x      # switch
-git checkout -b feature-x   # create + switch
-```
-
-### 4. Creating a Branch (GitHub)
-- Use the branch dropdown → type a name → **Create branch**
-- Then `git fetch` and `git checkout <branch>` locally
-
-### 5. .gitignore
-- Tells Git which files to skip (`node_modules/`, `.env`, `*.log`)
-```
-node_modules/
-.env
-*.log
-```
-
-### 6. Syncing Branches
-```bash
-git push -u origin feature-x   # push a new branch
-git pull                       # get latest changes
-git fetch                      # download without merging
-```
-
-### 7. Graph Branches in Terminal
-```bash
-git log --oneline --graph --all
-```
-
-### 8. Merging Branches
-```bash
-git checkout main
-git merge feature-x
-```
-- If there is a conflict, fix the files, then `git add .` and `git commit`
-
-### 9. Pull Requests (GitHub)
-- A PR asks to merge your branch into `main`
-- Flow: push branch → open PR → review → merge → delete branch
-
-### ⚡ Quick Flow
-`branch → commit → push → pull request → merge`
-
-![how can i receive any changes pull request for my main branch from different branch](image-1.png)
+ 
