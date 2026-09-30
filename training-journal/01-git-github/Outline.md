@@ -167,3 +167,5 @@ git branch -d "branch name"
 
 ###  Quick Flow
 `branch → commit → push → pull request → merge`
+
+## Merge Conflicts
