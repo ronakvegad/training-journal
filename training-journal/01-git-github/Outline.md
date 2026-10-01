@@ -169,4 +169,15 @@ git branch -d "branch name"
 `branch → commit → push → pull request → merge`
 
 ## Merge Conflicts
+
+### Types of Merges
+- Fast forward Merges : 
+  - Happens when the target branch has no new commits since the feature branch split off.
+  - Git just moves the branch pointer forward. No new merge commit, history stays linear.
+  - Can't have conflicts.
+- Recursive Merges:
+- Happens when both branches have diverged (each has its own new commits).
+  - Git finds the common ancestor, does a three-way merge, and creates a new merge commit with two parents.
+  - Conflicts can happen here if both branches changed the same lines.
+
 ## Collabration in github
